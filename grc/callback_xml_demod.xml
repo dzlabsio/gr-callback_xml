@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<block>
+    <name>demod</name>
+    <key>callback_xml_demod</key>
+    <category>[callback_xml]</category>
+    <import>import callback_xml</import>
+    <make>callback_xml.demod($bitstream)</make>
+
+    <callback>SetBitStream($bitstream)</callback>
+
+    <param>
+        <name>Bit Stream</name>
+        <key>bitstream</key>
+        <type>string</type>
+    </param>
+
+    <sink>
+        <name>in</name>
+        <type>message</type>
+        <optional>1</optional>
+    </sink>
+
+</block>
